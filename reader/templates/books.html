@@ -1,0 +1,9 @@
+<ul>
+    {%if data %}
+        {%for x in data%}
+        <li>Name: {{ x.name }} || Author: {{x.author}}</li>
+        {%endfor%}
+    {%else%}
+        <p>No Books Found</p>
+    {%endif%}
+</ul>
